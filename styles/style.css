@@ -211,8 +211,7 @@ button:hover {
   margin: 10px;
 }
 
-.product-title,
-.mobile-product-title {
+.product-title {
   color: var(--font-black);
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -271,12 +270,20 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 435px) {
   .right-arrow-container {
     display: none;
   }
   .deals {
     padding: 0;
+  }
+  .mobile-product-title {
+    color: var(--font-black);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 600;
+    width: 22ch;
   }
 }
 

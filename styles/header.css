@@ -71,6 +71,11 @@ ul.nav-links {
   vertical-align: middle;
 }
 
+.nav-left-section__input img {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
 .login-btn {
   padding: 0.5rem 2.18rem;
   font-weight: bold;

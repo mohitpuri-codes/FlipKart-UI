@@ -67,7 +67,7 @@ body {
   display: flex;
 }
 
-.category__name button {
+.category__name span {
   margin-left: 0.5rem;
 }
 

@@ -23,10 +23,12 @@
             <img src="assets/logos/brand-logo.svg" alt="brand-logo" />
           </a>
           <div class="nav-left-section__input" aria-label="left section of navbar" tabindex="0">
-            <input type="text" placeholder="Search for products, brands and more" />
-            <span>
-              <img src="assets/logos/search.svg" alt="search logo" />
-            </span>
+            <input type="text" placeholder="Search for products, brands and more" id="search-here" />
+            <label for="search-here">
+              <span>
+                <img src="assets/logos/search.svg" alt="search logo" />
+              </span>
+            </label>
           </div>
         </div>
 
@@ -80,9 +82,9 @@
             />
             <span class="category__name" id="Fashion">
               Fashion
-              <span>
+              <button>
                 <img src="assets/logos/down-arrow.svg" alt="down arrow" />
-              </span>
+              </button>
             </span>
           </a>
         </li>
@@ -91,9 +93,9 @@
             <img src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100" alt="category 1" />
             <span class="category__name" id="Electronics">
               Electronics
-              <span>
+              <button>
                 <img src="assets/logos/down-arrow.svg" alt="down arrow" />
-              </span>
+              </button>
             </span>
           </a>
         </li>
@@ -102,9 +104,9 @@
             <img src="https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100" alt="category 1" />
             <span class="category__name" id="Home">
               Home & Furniture
-              <span>
+              <button>
                 <img src="assets/logos/down-arrow.svg" alt="down arrow" />
-              </span>
+              </button>
             </span>
           </a>
         </li>
@@ -128,9 +130,9 @@
             <img src="https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100" alt="category 1" />
             <span id="Beauty" class="category__name">
               Beauty, Toys & More
-              <span>
+              <button>
                 <img src="assets/logos/down-arrow.svg" alt="down arrow" />
-              </span>
+              </button>
             </span>
           </a>
         </li>
@@ -142,9 +144,9 @@
             />
             <span class="category__name" id="Two">
               Two Wheelers
-              <span>
+              <button>
                 <img src="assets/logos/down-arrow.svg" alt="down arrow" />
-              </span>
+              </button>
             </span>
           </a>
         </li>
@@ -288,7 +290,7 @@
             </article>
           </div>
           <a href="#last-product" class="right-arrow-container">
-            <img class="right-arrow" src="assets/logos/right-arrow.svg" alt="right-arrow" />
+            <img class="right-arrow" src="assets/logos/right-arrow.svg" alt="right-arrow" role="button" />
           </a>
         </div>
         <div class="deals-right-section">
@@ -307,7 +309,6 @@
           </div>
           <button title="view all">VIEW ALL</button>
         </div>
-        <!-- mobile products -->
         <div class="mobile-products">
           <article class="mobile-product" aria-labelledby="mobile-casio">
             <a href="#">
@@ -323,7 +324,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-home">
@@ -340,7 +341,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-prem">
@@ -357,7 +358,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-best">
@@ -374,7 +375,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-fasion">
@@ -391,7 +392,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-monitor">
@@ -408,7 +409,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-lava">
@@ -425,7 +426,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="right arrow" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-cofe">
@@ -442,7 +443,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
         </div>
@@ -452,7 +453,7 @@
         <div class="books-header">
           <div class="books-title">
             <h2>Books And music Instruments</h2>
-            <p>Shop Now!</p>
+            <p class="shop-now">Shop Now!</p>
           </div>
           <button title="VIEW ALL">VIEW ALL</button>
         </div>
@@ -537,15 +538,15 @@
           </article>
         </div>
       </section>
+      <!-- mobile component of books and music -->
       <section class="mobile-deals" aria-labelledby="mob-deal">
         <div class="books-header">
           <div class="books-title">
             <h2>Books And music Instruments</h2>
-            <p>Shop Now!</p>
+            <p class="shop-now">Shop Now!</p>
           </div>
           <button title="VIEW ALL">VIEW ALL</button>
         </div>
-        <!-- mobile products -->
         <div class="mobile-products">
           <article class="mobile-product" aria-labelledby="mobile-casio">
             <a href="#">
@@ -561,7 +562,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-home">
@@ -578,7 +579,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-prem">
@@ -595,7 +596,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-best">
@@ -612,7 +613,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-fasion">
@@ -629,7 +630,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-monitor">
@@ -646,7 +647,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
         </div>

@@ -67,7 +67,7 @@ body {
   display: flex;
 }
 
-.category__name span {
+.category__name button {
   margin-left: 0.5rem;
 }
 
@@ -97,6 +97,11 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 0rem 0.75rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
 
 button:hover {
@@ -204,6 +209,7 @@ button:hover {
 .deals-right-section {
   background-color: var(--white);
   height: fit-content;
+  cursor: pointer;
 }
 
 .product-details {
@@ -404,4 +410,8 @@ button:hover {
   padding: var(--product-wrapper-padding);
   gap: 15px;
   overflow: auto;
+}
+
+.shop-now {
+  color: var(--primary-grey);
 }

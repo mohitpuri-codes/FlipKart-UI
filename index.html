@@ -12,6 +12,8 @@
   <body>
     <!-- navbar -->
     <header aria-label="header section">
+      <!-- skip to content -->
+      <a class="skip-link" href="#kilos">Skip to main content</a>
       <nav>
         <div class="nav-left-section">
           <div class="hamburger-menu">
@@ -23,12 +25,15 @@
             <img src="assets/logos/brand-logo.svg" alt="brand-logo" />
           </a>
           <div class="nav-left-section__input" tabindex="0">
-            <input type="text" placeholder="Search for products, brands and more" id="search-here" />
-            <label for="search-here">
-              <span>
-                <img src="assets/logos/search.svg" alt="search logo" />
-              </span>
-            </label>
+            <input
+              type="text"
+              placeholder="Search for products, brands and more"
+              id="search-here"
+              aria-label="Search here for products across all categories, brands"
+            />
+            <span>
+              <img src="assets/logos/search.svg" alt="search logo" />
+            </span>
           </div>
         </div>
 
@@ -38,7 +43,7 @@
               <button title="login" id="login" class="login-btn">Login</button>
             </li>
             <li class="nav-link">
-              <a href="#">
+              <a href="#" role="button">
                 <span aria-label="click here for more options">More</span>
                 <span>
                   <img src="assets/logos/more.svg" alt="more items" />
@@ -46,7 +51,7 @@
               </a>
             </li>
             <li class="nav-link">
-              <a href="#">
+              <a href="#" role="button">
                 <span>
                   <img id="cart-logo" src="assets/logos/cart.svg" alt="cart logo" />
                 </span>
@@ -62,20 +67,20 @@
 
     <section class="product-category">
       <ul class="categories" aria-label="categories to shop from">
-        <li class="category" aria-labelledby="kilos">
-          <a href="#">
+        <li class="category" aria-labelledby="kilos" id="kilos">
+          <a href="#" role="button">
             <img src="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" alt="category 1" />
             <span id="kilos" class="category__name">Kilos</span>
           </a>
         </li>
         <li class="category" aria-labelledby="Mobiles">
-          <a href="#">
+          <a href="#" role="button">
             <img src="https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" alt="category 1" />
             <span id="Mobiles" class="category__name">Mobiles</span>
           </a>
         </li>
         <li class="category" aria-labelledby="Fashion">
-          <a href="#">
+          <a href="#" role="button">
             <img
               src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100"
               alt="category 1"
@@ -89,7 +94,7 @@
           </a>
         </li>
         <li class="category" aria-labelledby="Electronics">
-          <a href="#">
+          <a href="#" role="button">
             <img src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100" alt="category 1" />
             <span class="category__name" id="Electronics">
               Electronics
@@ -100,7 +105,7 @@
           </a>
         </li>
         <li class="category" aria-labelledby="Home">
-          <a href="#">
+          <a href="#" role="button">
             <img src="https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100" alt="category 1" />
             <span class="category__name" id="Home">
               Home & Furniture
@@ -111,7 +116,7 @@
           </a>
         </li>
         <li class="category" aria-labelledby="Appliances">
-          <a href="#">
+          <a href="#" role="button">
             <img
               src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100"
               alt="category 1"
@@ -120,13 +125,13 @@
           </a>
         </li>
         <li class="category" aria-labelledby="Flight">
-          <a href="#">
+          <a href="#" role="button">
             <img src="https://rukminim2.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100" alt="category 1" />
             <span id="Flight" class="category__name">Flight Bookings</span>
           </a>
         </li>
         <li class="category" aria-labelledby="Beauty">
-          <a href="#">
+          <a href="#" role="button">
             <img src="https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100" alt="category 1" />
             <span id="Beauty" class="category__name">
               Beauty, Toys & More
@@ -137,7 +142,7 @@
           </a>
         </li>
         <li class="category" aria-labelledby="Two">
-          <a href="#">
+          <a href="#" role="button">
             <img
               src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png?q=100"
               alt="category 1"
@@ -161,7 +166,7 @@
         <div class="deals-left-section">
           <div class="deals-title">
             <div class="deals__title-header">
-              <h2 id="deal-day">Deals of the day</h2>
+              <p id="deal-day">Deals of the day</p>
               <div class="deals__time-left">
                 <img src="assets/logos/clock.svg" alt="clocl icon" />
                 <span>22: 07 : 36 Left</span>
@@ -171,7 +176,7 @@
           </div>
           <div class="deals__products" aria-label="all the discounted products">
             <article class="product" aria-labelledby="Casio">
-              <a href="#">
+              <a href="#" role="button">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/r/h/i/1-26970-invicta-men-original-imah8hwzdepkxfgb.jpeg?q=70"
                   alt="product image"
@@ -184,7 +189,7 @@
               </a>
             </article>
             <article class="product" aria-labelledby="home">
-              <a href="#">
+              <a href="#" role="button">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/s/z/h/10-10-23-200-wooden-temple-2-twinster-11-02-original-imahfyrmhfcbkfhs.jpeg?q=70"
                   alt="product image"
@@ -197,7 +202,7 @@
               </a>
             </article>
             <article class="product" aria-labelledby="Premimum">
-              <a href="#">
+              <a href="#" role="button">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/flip-cover/r/s/t/13873-blue-tgk-original-imah4s2ufvrqkzgq.jpeg?q=70"
                   alt="product image"
@@ -210,7 +215,7 @@
               </a>
             </article>
             <article class="product" aria-labelledby="Best">
-              <a href="#">
+              <a href="#" role="button">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/pillow/w/u/5/10-cushion-05m-304-5-fibre-cushion-16-16-inchs-304-spinewell-original-imagp4fgeh4fvs2u.jpeg?q=70"
                   alt="product image"
@@ -223,7 +228,7 @@
               </a>
             </article>
             <article class="product" aria-labelledby="Fashion">
-              <a href="#">
+              <a href="#" role="button">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/i/h/s/l-ww-melanin-balck-smartees-original-imah5gkygumgxvaz.jpeg?q=70"
                   alt="product image"
@@ -236,7 +241,7 @@
               </a>
             </article>
             <article class="product" aria-labelledby="monitor">
-              <a href="#">
+              <a href="#" role="button">
                 <img
                   src="https://rukminim2.flixcart.com/image/110/110/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=80"
                   alt="product image"
@@ -249,7 +254,7 @@
               </a>
             </article>
             <article class="product" aria-labelledby="lava">
-              <a href="#">
+              <a href="#" role="button">
                 <img
                   src="https://rukminim2.flixcart.com/image/312/312/k3xcdjk0pkrrdj/mobile/j/m/f/lava-a5-lf5000-a5-original-imafmjkamgsvzsng.jpeg?q=90"
                   alt="product image"
@@ -262,7 +267,7 @@
               </a>
             </article>
             <article class="product" aria-labelledby="lava2">
-              <a href="#">
+              <a href="#" role="button">
                 <img
                   src="https://rukminim2.flixcart.com/image/300/300/k3xcdjk0pkrrdj/mobile/j/m/f/lava-a5-lf5000-a5-original-imafmjkamgsvzsng.jpeg?q=90"
                   alt="product image"
@@ -276,7 +281,7 @@
             </article>
 
             <article class="product" id="last-product" aria-labelledby="cofe">
-              <a href="#">
+              <a href="#" role="button">
                 <img
                   src="https://rukminim2.flixcart.com/image/120/120/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=80"
                   alt="product image"
@@ -290,10 +295,10 @@
             </article>
           </div>
           <a href="#last-product" class="right-arrow-container">
-            <img class="right-arrow" src="assets/logos/right-arrow.svg" alt="right-arrow" role="button" />
+            <img class="right-arrow" src="assets/logos/right-arrow.svg" alt="right-arrow" />
           </a>
         </div>
-        <div class="deals-right-section">
+        <div class="deals-right-section" tabindex="0">
           <img src="assets/images/new-beginning.png" alt="current deal image" />
         </div>
       </section>
@@ -301,7 +306,7 @@
       <section class="mobile-deals" aria-labelledby="mob-deal">
         <div class="mobile-deals-title">
           <div class="deals__title-header">
-            <h2 id="mob-deal">Deals of the day</h2>
+            <p id="mob-deal">Deals of the day</p>
             <div class="deals__time-left">
               <img src="assets/logos/clock.svg" alt="clocl icon" />
               <span>22: 07 : 36 Left</span>
@@ -311,7 +316,7 @@
         </div>
         <div class="mobile-products">
           <article class="mobile-product" aria-labelledby="mobile-casio">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/r/h/i/1-26970-invicta-men-original-imah8hwzdepkxfgb.jpeg?q=70"
@@ -324,11 +329,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-home">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/s/z/h/10-10-23-200-wooden-temple-2-twinster-11-02-original-imahfyrmhfcbkfhs.jpeg?q=70"
@@ -341,11 +348,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-prem">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/flip-cover/r/s/t/13873-blue-tgk-original-imah4s2ufvrqkzgq.jpeg?q=70"
@@ -358,11 +367,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-best">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/pillow/w/u/5/10-cushion-05m-304-5-fibre-cushion-16-16-inchs-304-spinewell-original-imagp4fgeh4fvs2u.jpeg?q=70"
@@ -375,11 +386,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-fasion">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/i/h/s/l-ww-melanin-balck-smartees-original-imah5gkygumgxvaz.jpeg?q=70"
@@ -392,11 +405,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-monitor">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/110/110/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=80"
@@ -409,11 +424,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-lava">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/312/312/k3xcdjk0pkrrdj/mobile/j/m/f/lava-a5-lf5000-a5-original-imafmjkamgsvzsng.jpeg?q=90"
@@ -426,11 +443,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="right arrow" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="right arrow" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-cofe">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/120/120/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=80"
@@ -443,7 +462,9 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
         </div>
@@ -452,14 +473,14 @@
       <section class="books-and-instruments" aria-labelledby="book-header">
         <div class="books-header">
           <div class="books-title">
-            <h2 id="book-header">Books And music Instruments</h2>
+            <p id="book-header">Books And music Instruments</p>
             <p class="shop-now">Shop Now!</p>
           </div>
           <button title="VIEW ALL">VIEW ALL</button>
         </div>
         <div class="books-and-instruments__products">
           <article class="product" aria-labelledby="harmonium">
-            <a href="#">
+            <a href="#" role="button">
               <img
                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/harmonium/d/z/t/39-gs4-sg-musical-original-imah2v3yf8xwxhjn.jpeg?q=70"
                 alt="product image"
@@ -472,7 +493,7 @@
             </a>
           </article>
           <article class="product" aria-labelledby="flutes">
-            <a href="#">
+            <a href="#" role="button">
               <img
                 src="https://rukminim2.flixcart.com/image/612/612/kwl0akw0/flute/e/u/d/g-scale-bamboo-flute-bamboo-flute-43-cm-khalsa-musical-original-imag98hfxksucfzp.jpeg?q=70"
                 alt="product image"
@@ -485,7 +506,7 @@
             </a>
           </article>
           <article class="product" aria-labelledby="guitars">
-            <a href="#">
+            <a href="#" role="button">
               <img
                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/e/j/f/rvl-38c-lgp-nt-revel-original-imah4ea9zuzcr2by.jpeg?q=70"
                 alt="product image"
@@ -498,7 +519,7 @@
             </a>
           </article>
           <article class="product" aria-labelledby="music">
-            <a href="#">
+            <a href="#" role="button">
               <img
                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/car-media-player/n/a/b/sb-0000bt-blue-bluetooth-usb-sd-aux-fm-mp3-sound-boss-original-imah5aggnnhwrzty.jpeg?q=70"
                 alt="product image"
@@ -511,7 +532,7 @@
             </a>
           </article>
           <article class="product" aria-labelledby="book">
-            <a href="#">
+            <a href="#" role="button">
               <img
                 src="https://rukminim2.flixcart.com/image/612/612/book/8/8/4/metamorphosis-original-imae552hhxwcc5gj.jpeg?q=70"
                 alt="product image"
@@ -524,7 +545,7 @@
             </a>
           </article>
           <article class="product" aria-labelledby="acoustics">
-            <a href="#">
+            <a href="#" role="button">
               <img
                 src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/8/d/t/rvl-38c-lgp-3ts-revel-original-imah4ea7yphgggmb.jpeg?q=70"
                 alt="product image"
@@ -542,14 +563,14 @@
       <section class="mobile-deals" aria-labelledby="music-header">
         <div class="books-header">
           <div class="books-title">
-            <h2 id="music-header">Books And music Instruments</h2>
+            <p id="music-header">Books And music Instruments</p>
             <p class="shop-now">Shop Now!</p>
           </div>
           <button title="VIEW ALL">VIEW ALL</button>
         </div>
         <div class="mobile-products">
           <article class="mobile-product" aria-labelledby="mobile-harmonium">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/harmonium/d/z/t/39-gs4-sg-musical-original-imah2v3yf8xwxhjn.jpeg?q=70"
@@ -562,11 +583,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-flutes">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/kwl0akw0/flute/e/u/d/g-scale-bamboo-flute-bamboo-flute-43-cm-khalsa-musical-original-imag98hfxksucfzp.jpeg?q=70"
@@ -579,11 +602,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-guitar">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/e/j/f/rvl-38c-lgp-nt-revel-original-imah4ea9zuzcr2by.jpeg?q=70"
@@ -596,11 +621,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-music">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/car-media-player/n/a/b/sb-0000bt-blue-bluetooth-usb-sd-aux-fm-mp3-sound-boss-original-imah5aggnnhwrzty.jpeg?q=70"
@@ -613,11 +640,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-book">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/book/8/8/4/metamorphosis-original-imae552hhxwcc5gj.jpeg?q=70"
@@ -630,11 +659,13 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-acoustics">
-            <a href="#">
+            <a href="#" role="button">
               <div class="mobile-product-left">
                 <img
                   src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/8/d/t/rvl-38c-lgp-3ts-revel-original-imah4ea7yphgggmb.jpeg?q=70"
@@ -647,7 +678,9 @@
                   </div>
                 </div>
               </div>
-              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+              <div role="button" class="mobile-product-right">
+                <img src="assets/logos/right-arrow.svg" alt="arrow icon" />
+              </div>
             </a>
           </article>
         </div>

@@ -79,7 +79,7 @@ ul.nav-links {
 .login-btn {
   padding: 0.5rem 2.18rem;
   font-weight: bold;
-  color: #2874f1;
+  color: var(--primary-blue-bg);
   background-color: var(--white);
   border: none;
 }
@@ -114,4 +114,19 @@ ul.nav-links {
   .login-btn {
     padding: 0.5rem 1.25rem;
   }
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: var(--font-black);
+  color: var(--white);
+  padding: 10px;
+  text-decoration: none;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 10px;
 }

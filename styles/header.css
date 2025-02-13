@@ -6,6 +6,8 @@ nav {
   gap: 1.25rem;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 auto;
+  max-width: 160rem;
 }
 
 .nav-left-section {

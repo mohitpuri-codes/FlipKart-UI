@@ -135,13 +135,13 @@ button:hover {
 .deals__title-header {
   display: flex;
   gap: 20px;
-  align-items: center;
 }
 
 .deals__time-left {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--primary-grey);
 }
 
 .deals__time-left img {

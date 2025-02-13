@@ -22,33 +22,35 @@
           <a href="index.html" class="brand-logo">
             <img src="assets/logos/brand-logo.svg" alt="brand-logo" />
           </a>
-          <div class="nav-left-section__input" aria-label="left section of navbar">
-            <input type="text" placeholder="Search for products, brands and more" />
-            <span>
-              <img src="assets/logos/search.svg" alt="search logo" />
-            </span>
+          <div class="nav-left-section__input" tabindex="0">
+            <input type="text" placeholder="Search for products, brands and more" id="search-here" />
+            <label for="search-here">
+              <span>
+                <img src="assets/logos/search.svg" alt="search logo" />
+              </span>
+            </label>
           </div>
         </div>
 
-        <div class="nav-right-section" aria-label="right section of navbar">
+        <div class="nav-right-section">
           <ul class="nav-links" aria-label="nav links for login button, more and cart">
             <li class="nav-link" aria-labelledby="login">
               <button title="login" id="login" class="login-btn">Login</button>
             </li>
             <li class="nav-link">
-              <a href="#" aria-labelledby="more">
-                <span id="more">More</span>
+              <a href="#">
+                <span aria-label="click here for more options">More</span>
                 <span>
                   <img src="assets/logos/more.svg" alt="more items" />
                 </span>
               </a>
             </li>
             <li class="nav-link">
-              <a href="#" aria-labelledby="cart">
+              <a href="#">
                 <span>
                   <img id="cart-logo" src="assets/logos/cart.svg" alt="cart logo" />
                 </span>
-                <span id="cart">Cart</span>
+                <span id="cart" aria-label="Click here to visit your cart">Cart</span>
               </a>
             </li>
           </ul>
@@ -288,7 +290,7 @@
             </article>
           </div>
           <a href="#last-product" class="right-arrow-container">
-            <img class="right-arrow" src="assets/logos/right-arrow.svg" alt="right-arrow" />
+            <img class="right-arrow" src="assets/logos/right-arrow.svg" alt="right-arrow" role="button" />
           </a>
         </div>
         <div class="deals-right-section">
@@ -307,7 +309,6 @@
           </div>
           <button title="view all">VIEW ALL</button>
         </div>
-        <!-- mobile products -->
         <div class="mobile-products">
           <article class="mobile-product" aria-labelledby="mobile-casio">
             <a href="#">
@@ -323,7 +324,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-home">
@@ -340,7 +341,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-prem">
@@ -357,7 +358,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-best">
@@ -370,11 +371,11 @@
                 <div class="mobile-product__description">
                   <div class="mobile-product-details">
                     <p class="mobile-product-title" id="mobile-best">Best of Home Decor</p>
-                    <p class="mobile-product-discount">From $79 only</p>
+                    <p class="mobile-product-discount">From ₹79 only</p>
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-fasion">
@@ -391,7 +392,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-monitor">
@@ -408,7 +409,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-lava">
@@ -425,7 +426,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="right arrow" /></button>
             </a>
           </article>
           <article class="mobile-product" aria-labelledby="mobile-cofe">
@@ -442,13 +443,215 @@
                   </div>
                 </div>
               </div>
-              <div class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="" /></div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
             </a>
           </article>
         </div>
       </section>
       <!-- books -->
-      <section class="books"></section>
+      <section class="books-and-instruments" aria-labelledby="book-header">
+        <div class="books-header">
+          <div class="books-title">
+            <h2 id="book-header">Books And music Instruments</h2>
+            <p class="shop-now">Shop Now!</p>
+          </div>
+          <button title="VIEW ALL">VIEW ALL</button>
+        </div>
+        <div class="books-and-instruments__products">
+          <article class="product" aria-labelledby="harmonium">
+            <a href="#">
+              <img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/harmonium/d/z/t/39-gs4-sg-musical-original-imah2v3yf8xwxhjn.jpeg?q=70"
+                alt="product image"
+              />
+              <div class="product-details">
+                <p class="product-title" id="harmonium">Harmoniums</p>
+                <p class="product-discount">Up to 60% Off</p>
+                <p class="product-deal-type">Shop Now!</p>
+              </div>
+            </a>
+          </article>
+          <article class="product" aria-labelledby="flutes">
+            <a href="#">
+              <img
+                src="https://rukminim2.flixcart.com/image/612/612/kwl0akw0/flute/e/u/d/g-scale-bamboo-flute-bamboo-flute-43-cm-khalsa-musical-original-imag98hfxksucfzp.jpeg?q=70"
+                alt="product image"
+              />
+              <div class="product-details">
+                <p class="product-title" id="flutes">Flutes</p>
+                <p class="product-discount">Up to 80% Off</p>
+                <p class="product-deal-type">Shop Now!</p>
+              </div>
+            </a>
+          </article>
+          <article class="product" aria-labelledby="guitars">
+            <a href="#">
+              <img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/e/j/f/rvl-38c-lgp-nt-revel-original-imah4ea9zuzcr2by.jpeg?q=70"
+                alt="product image"
+              />
+              <div class="product-details">
+                <p class="product-title" id="guitars">Acoustic Guitars</p>
+                <p class="product-discount">Starting ₹1799</p>
+                <p class="product-deal-type">Juarez, Revel...</p>
+              </div>
+            </a>
+          </article>
+          <article class="product" aria-labelledby="music">
+            <a href="#">
+              <img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/car-media-player/n/a/b/sb-0000bt-blue-bluetooth-usb-sd-aux-fm-mp3-sound-boss-original-imah5aggnnhwrzty.jpeg?q=70"
+                alt="product image"
+              />
+              <div class="product-details">
+                <p class="product-title" id="music">Musical Accessories</p>
+                <p class="product-discount">Upto 80% Off</p>
+                <p class="product-deal-type">Shop Now!</p>
+              </div>
+            </a>
+          </article>
+          <article class="product" aria-labelledby="book">
+            <a href="#">
+              <img
+                src="https://rukminim2.flixcart.com/image/612/612/book/8/8/4/metamorphosis-original-imae552hhxwcc5gj.jpeg?q=70"
+                alt="product image"
+              />
+              <div class="product-details">
+                <p class="product-title" id="book">Metamorphosis</p>
+                <p class="product-discount">Up to 80% Off</p>
+                <p class="product-deal-type">Shop Now!</p>
+              </div>
+            </a>
+          </article>
+          <article class="product" aria-labelledby="acoustics">
+            <a href="#">
+              <img
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/8/d/t/rvl-38c-lgp-3ts-revel-original-imah4ea7yphgggmb.jpeg?q=70"
+                alt="product image"
+              />
+              <div class="product-details">
+                <p class="product-title" id="acoustics">Acoustic Guitars</p>
+                <p class="product-discount">Starting ₹1999</p>
+                <p class="product-deal-type">By Revel</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- mobile component of books and music -->
+      <section class="mobile-deals" aria-labelledby="music-header">
+        <div class="books-header">
+          <div class="books-title">
+            <h2 id="music-header">Books And music Instruments</h2>
+            <p class="shop-now">Shop Now!</p>
+          </div>
+          <button title="VIEW ALL">VIEW ALL</button>
+        </div>
+        <div class="mobile-products">
+          <article class="mobile-product" aria-labelledby="mobile-harmonium">
+            <a href="#">
+              <div class="mobile-product-left">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/harmonium/d/z/t/39-gs4-sg-musical-original-imah2v3yf8xwxhjn.jpeg?q=70"
+                  alt="product image"
+                />
+                <div class="mobile-product__description">
+                  <div class="mobile-product-details">
+                    <p class="mobile-product-title" id="mobile-harmonium">Harmoniums</p>
+                    <p class="mobile-product-discount">Up to 80% Off</p>
+                  </div>
+                </div>
+              </div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+            </a>
+          </article>
+          <article class="mobile-product" aria-labelledby="mobile-flutes">
+            <a href="#">
+              <div class="mobile-product-left">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/kwl0akw0/flute/e/u/d/g-scale-bamboo-flute-bamboo-flute-43-cm-khalsa-musical-original-imag98hfxksucfzp.jpeg?q=70"
+                  alt="product image"
+                />
+                <div class="mobile-product__description">
+                  <div class="mobile-product-details">
+                    <p class="mobile-product-title" id="mobile-flutes">Flutes</p>
+                    <p class="mobile-product-discount">Up to 80% Off</p>
+                  </div>
+                </div>
+              </div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+            </a>
+          </article>
+          <article class="mobile-product" aria-labelledby="mobile-guitar">
+            <a href="#">
+              <div class="mobile-product-left">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/e/j/f/rvl-38c-lgp-nt-revel-original-imah4ea9zuzcr2by.jpeg?q=70"
+                  alt="product image"
+                />
+                <div class="mobile-product__description">
+                  <div class="mobile-product-details">
+                    <p class="mobile-product-title" id="mobile-guitar">Acoustic Guitars</p>
+                    <p class="mobile-product-discount">Starting ₹1799</p>
+                  </div>
+                </div>
+              </div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+            </a>
+          </article>
+          <article class="mobile-product" aria-labelledby="mobile-music">
+            <a href="#">
+              <div class="mobile-product-left">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/car-media-player/n/a/b/sb-0000bt-blue-bluetooth-usb-sd-aux-fm-mp3-sound-boss-original-imah5aggnnhwrzty.jpeg?q=70"
+                  alt="product image"
+                />
+                <div class="mobile-product__description">
+                  <div class="mobile-product-details">
+                    <p class="mobile-product-title" id="mobile-music">Musical Accessories</p>
+                    <p class="mobile-product-discount">Up to 80% Off</p>
+                  </div>
+                </div>
+              </div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+            </a>
+          </article>
+          <article class="mobile-product" aria-labelledby="mobile-book">
+            <a href="#">
+              <div class="mobile-product-left">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/book/8/8/4/metamorphosis-original-imae552hhxwcc5gj.jpeg?q=70"
+                  alt="product image"
+                />
+                <div class="mobile-product__description">
+                  <div class="mobile-product-details">
+                    <p class="mobile-product-title" id="mobile-book">Metamorphosis</p>
+                    <p class="mobile-product-discount">up to 80% Off</p>
+                  </div>
+                </div>
+              </div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+            </a>
+          </article>
+          <article class="mobile-product" aria-labelledby="mobile-acoustics">
+            <a href="#">
+              <div class="mobile-product-left">
+                <img
+                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/8/d/t/rvl-38c-lgp-3ts-revel-original-imah4ea7yphgggmb.jpeg?q=70"
+                  alt="product image"
+                />
+                <div class="mobile-product__description">
+                  <div class="mobile-product-details">
+                    <p class="mobile-product-title" id="mobile-acoustics">Accoustic Guitars</p>
+                    <p class="mobile-product-discount">Starting ₹1999</p>
+                  </div>
+                </div>
+              </div>
+              <button class="mobile-product-right"><img src="assets/logos/right-arrow.svg" alt="arrow icon" /></button>
+            </a>
+          </article>
+        </div>
+      </section>
     </main>
   </body>
 </html>

@@ -6,6 +6,8 @@
   --font-black: black;
   --primary-grey: rgb(110, 110, 110);
   --discount-green: rgb(18 171 18);
+  --product-header-padding: 20px 20px 10px 20px;
+  --product-wrapper-padding: 20px 10px 0 10px;
 }
 
 * {
@@ -94,10 +96,12 @@ main {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+  padding: 0rem 0.75rem;
 }
 
-.categories {
-  margin-bottom: 20px;
+button {
+  background-color: transparent;
+  border: none;
 }
 
 button:hover {
@@ -107,7 +111,7 @@ button:hover {
 .deals {
   display: flex;
   margin: 0 auto;
-  padding: 1.25rem 0.75rem;
+  padding: 1.25rem 0;
   gap: 20px;
 }
 
@@ -120,7 +124,7 @@ button:hover {
 .deals-title {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 10px 20px;
+  padding: var(--product-header-padding);
   align-items: center;
   border-bottom: 1px solid var(--primary-grey);
 }
@@ -142,14 +146,17 @@ button:hover {
 }
 
 .deals-title button,
-.mobile-deals-title button {
+.mobile-deals-title button,
+.books-header button {
   background-color: var(--primary-blue-bg);
   color: var(--white);
   padding: 10px 20px;
+  height: max-content;
   border: none;
 }
 .deals-title button:hover,
-.mobile-deals-title button:hover {
+.mobile-deals-title button:hover,
+.books-header button:hover {
   cursor: pointer;
   box-shadow: 3px 2px 4px var(--primary-grey);
   transition: box-shadow 0.3s ease-in;
@@ -157,7 +164,7 @@ button:hover {
 
 .deals__products {
   display: flex;
-  padding: 20px 10px 0 10px;
+  padding: var(--product-wrapper-padding);
   gap: 15px;
   overflow: auto;
 }
@@ -202,6 +209,7 @@ button:hover {
 .deals-right-section {
   background-color: var(--white);
   height: fit-content;
+  cursor: pointer;
 }
 
 .product-details {
@@ -245,7 +253,13 @@ button:hover {
   }
 }
 @media only screen and (max-width: 767px) {
+  main {
+    padding: 0;
+  }
   .deals {
+    display: none;
+  }
+  .books-and-instruments {
     display: none;
   }
 }
@@ -259,7 +273,8 @@ button:hover {
     flex-direction: row-reverse;
     gap: 5px;
   }
-  .deals__title-header h2 {
+  .deals__title-header h2,
+  .books-header h2 {
     font-size: 16px;
   }
   .deals__time-left span {
@@ -277,6 +292,7 @@ button:hover {
   .deals {
     padding: 0;
   }
+
   .mobile-product-title {
     color: var(--font-black);
     white-space: nowrap;
@@ -287,22 +303,33 @@ button:hover {
   }
 }
 
+@media only screen and (max-width: 395px) {
+  .books-header h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 17ch;
+  }
+}
+
 /* mobile products */
 
 .mobile-deals {
   background-color: var(--white);
+  margin-top: 20px;
 }
 
 .mobile-deals-title {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px 10px 20px;
+  padding: var(--product-header-padding);
   align-items: center;
 }
 
 .mobile-products {
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 .mobile-product img {
@@ -358,4 +385,33 @@ button:hover {
 .mobile-product-title:hover,
 .mobile-product-discount:hover {
   text-decoration: underline;
+}
+
+.books-and-instruments {
+  background-color: var(--white);
+}
+
+.books-header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--product-header-padding);
+  border-bottom: 1px solid var(--primary-grey);
+  align-items: center;
+}
+
+.books-title {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.books-and-instruments__products {
+  display: flex;
+  padding: var(--product-wrapper-padding);
+  gap: 15px;
+  overflow: auto;
+}
+
+.shop-now {
+  color: var(--primary-grey);
 }

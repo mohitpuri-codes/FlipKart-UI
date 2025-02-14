@@ -1,348 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/logos/flipkart_logo-freelogovectors.net_.png" />
-    <title>Flipkart</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-  </head>
 
-  <body>
-    <!-- navbar -->
-    <header aria-label="header section">
-      <!-- skip to content -->
-      <a class="skip-link" href="#kilos">Skip to main content</a>
-      <nav>
-        <div class="nav-left-section">
-          <div class="hamburger-menu">
-            <hr />
-            <hr />
-            <hr />
-          </div>
-          <a href="index.html" class="brand-logo">
-            <img loading="lazy" src="assets/logos/brand-logo.svg" alt="brand-logo" />
-          </a>
-          <div class="nav-left-section__input" tabindex="0">
-            <input
-              type="text"
-              placeholder="Search for products, brands and more"
-              id="search-here"
-              aria-label="Search here for products across all categories, brands"
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/logos/flipkart_logo-freelogovectors.net_.png" />
+  <title>Flipkart</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <header aria-label="header section">
+    <!-- skip to content -->
+    <a class="skip-link" href="#kilos">Skip to main content</a>
+    <nav>
+      <div class="nav-left-section">
+        <a href="#" class="hamburger-menu">
+          <img src="assets/logos/hamburger-icon.svg" alt="menu icon">
+        </a>
+        <a href="index.html" class="brand-logo">
+          <img loading="lazy" src="assets/logos/brand-logo.svg" alt="brand-logo" />
+        </a>
+        <div class="nav-left-section__input" tabindex="0">
+          <input type="text" placeholder="Search for products, brands and more" id="search-here"
+            aria-label="Search here for products across all categories, brands" />
+          <span>
+            <img loading="lazy" src="assets/logos/search.svg" alt="search logo" />
+          </span>
+        </div>
+      </div>
+
+      <div class="nav-right-section">
+        <ul class="nav-links" aria-label="nav links for login button, more and cart">
+          <li class="nav-link" aria-labelledby="login">
+            <button title="login" id="login" class="login-btn">Login</button>
+          </li>
+          <li class="nav-link">
+            <a href="#" role="button">
+              <span aria-label="click here for more options">More</span>
+              <span>
+                <img loading="lazy" src="assets/logos/more.svg" alt="more items" />
+              </span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#" role="button">
+              <span>
+                <img loading="lazy" id="cart-logo" src="assets/logos/cart.svg" alt="cart logo" />
+              </span>
+              <span id="cart" aria-label="Click here to visit your cart">Cart</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- product -->
+
+  <section class="product-category">
+    <ul class="categories" aria-label="categories to shop from">
+      <li class="category" aria-labelledby="kilos" id="kilos">
+        <a href="#" role="button">
+          <img loading="lazy" src="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100"
+            alt="category 1" />
+          <span id="kilos" class="category__name">Kilos</span>
+        </a>
+      </li>
+      <li class="category" aria-labelledby="Mobiles">
+        <a href="#" role="button">
+          <img loading="lazy" src="https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100"
+            alt="category 2" />
+          <span id="Mobiles" class="category__name">Mobiles</span>
+        </a>
+      </li>
+      <li class="category" aria-labelledby="Fashion">
+        <a href="#" role="button">
+          <img loading="lazy" src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100"
+            alt="category 3" />
+          <span class="category__name" id="Fashion">
+            Fashion
             <span>
-              <img loading="lazy" src="assets/logos/search.svg" alt="search logo" />
+              <img loading="lazy" src="assets/logos/down-arrow.svg" alt="down arrow" />
             </span>
-          </div>
-        </div>
-
-        <div class="nav-right-section">
-          <ul class="nav-links" aria-label="nav links for login button, more and cart">
-            <li class="nav-link" aria-labelledby="login">
-              <button title="login" id="login" class="login-btn">Login</button>
-            </li>
-            <li class="nav-link">
-              <a href="#" role="button">
-                <span aria-label="click here for more options">More</span>
-                <span>
-                  <img loading="lazy" src="assets/logos/more.svg" alt="more items" />
-                </span>
-              </a>
-            </li>
-            <li class="nav-link">
-              <a href="#" role="button">
-                <span>
-                  <img loading="lazy" id="cart-logo" src="assets/logos/cart.svg" alt="cart logo" />
-                </span>
-                <span id="cart" aria-label="Click here to visit your cart">Cart</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <!-- product -->
-
-    <section class="product-category">
-      <ul class="categories" aria-label="categories to shop from">
-        <li class="category" aria-labelledby="kilos" id="kilos">
-          <a href="#" role="button">
-            <img
-              loading="lazy"
-              src="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100"
-              alt="category 1"
-            />
-            <span id="kilos" class="category__name">Kilos</span>
-          </a>
-        </li>
-        <li class="category" aria-labelledby="Mobiles">
-          <a href="#" role="button">
-            <img
-              loading="lazy"
-              src="https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100"
-              alt="category 2"
-            />
-            <span id="Mobiles" class="category__name">Mobiles</span>
-          </a>
-        </li>
-        <li class="category" aria-labelledby="Fashion">
-          <a href="#" role="button">
-            <img
-              loading="lazy"
-              src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100"
-              alt="category 3"
-            />
-            <span class="category__name" id="Fashion">
-              Fashion
-              <span>
-                <img loading="lazy" src="assets/logos/down-arrow.svg" alt="down arrow" />
-              </span>
+          </span>
+        </a>
+      </li>
+      <li class="category" aria-labelledby="Electronics">
+        <a href="#" role="button">
+          <img loading="lazy" src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
+            alt="category 4" />
+          <span class="category__name" id="Electronics">
+            Electronics
+            <span>
+              <img loading="lazy" src="assets/logos/down-arrow.svg" alt="down arrow" />
             </span>
-          </a>
-        </li>
-        <li class="category" aria-labelledby="Electronics">
-          <a href="#" role="button">
-            <img
-              loading="lazy"
-              src="https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100"
-              alt="category 4"
-            />
-            <span class="category__name" id="Electronics">
-              Electronics
-              <span>
-                <img loading="lazy" src="assets/logos/down-arrow.svg" alt="down arrow" />
-              </span>
+          </span>
+        </a>
+      </li>
+      <li class="category" aria-labelledby="Home">
+        <a href="#" role="button">
+          <img loading="lazy" src="https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100"
+            alt="category 5" />
+          <span class="category__name" id="Home">
+            Home & Furniture
+            <span>
+              <img loading="lazy" src="assets/logos/down-arrow.svg" alt="down arrow" />
             </span>
-          </a>
-        </li>
-        <li class="category" aria-labelledby="Home">
-          <a href="#" role="button">
-            <img
-              loading="lazy"
-              src="https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100"
-              alt="category 5"
-            />
-            <span class="category__name" id="Home">
-              Home & Furniture
-              <span>
-                <img loading="lazy" src="assets/logos/down-arrow.svg" alt="down arrow" />
-              </span>
+          </span>
+        </a>
+      </li>
+      <li class="category" aria-labelledby="Appliances">
+        <a href="#" role="button">
+          <img loading="lazy" src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100"
+            alt="category 6" />
+          <span id="Appliances" class="category__name">Appliances</span>
+        </a>
+      </li>
+      <li class="category" aria-labelledby="Flight">
+        <a href="#" role="button">
+          <img loading="lazy" src="https://rukminim2.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100"
+            alt="category 7" />
+          <span id="Flight" class="category__name">Flight Bookings</span>
+        </a>
+      </li>
+      <li class="category" aria-labelledby="Beauty">
+        <a href="#" role="button">
+          <img loading="lazy" src="https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100"
+            alt="category 8" />
+          <span id="Beauty" class="category__name">
+            Beauty, Toys & More
+            <span>
+              <img loading="lazy" src="assets/logos/down-arrow.svg" alt="down arrow" />
             </span>
-          </a>
-        </li>
-        <li class="category" aria-labelledby="Appliances">
-          <a href="#" role="button">
-            <img
-              loading="lazy"
-              src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100"
-              alt="category 6"
-            />
-            <span id="Appliances" class="category__name">Appliances</span>
-          </a>
-        </li>
-        <li class="category" aria-labelledby="Flight">
-          <a href="#" role="button">
-            <img
-              loading="lazy"
-              src="https://rukminim2.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100"
-              alt="category 7"
-            />
-            <span id="Flight" class="category__name">Flight Bookings</span>
-          </a>
-        </li>
-        <li class="category" aria-labelledby="Beauty">
-          <a href="#" role="button">
-            <img
-              loading="lazy"
-              src="https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100"
-              alt="category 8"
-            />
-            <span id="Beauty" class="category__name">
-              Beauty, Toys & More
-              <span>
-                <img loading="lazy" src="assets/logos/down-arrow.svg" alt="down arrow" />
-              </span>
+          </span>
+        </a>
+      </li>
+      <li class="category" aria-labelledby="Two">
+        <a href="#" role="button">
+          <img loading="lazy" src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png?q=100"
+            alt="category 9" />
+          <span class="category__name" id="Two">
+            Two Wheelers
+            <span>
+              <img loading="lazy" src="assets/logos/down-arrow.svg" alt="down arrow" />
             </span>
-          </a>
-        </li>
-        <li class="category" aria-labelledby="Two">
-          <a href="#" role="button">
-            <img
-              loading="lazy"
-              src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png?q=100"
-              alt="category 9"
-            />
-            <span class="category__name" id="Two">
-              Two Wheelers
-              <span>
-                <img loading="lazy" src="assets/logos/down-arrow.svg" alt="down arrow" />
-              </span>
-            </span>
-          </a>
-        </li>
-      </ul>
-    </section>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </section>
 
-    <!-- main-page -->
+  <!-- main-page -->
 
-    <main>
-      <!-- deals of the day for lg screen -->
-      <section class="deals" aria-labelledby="deal-day">
-        <div class="deals-left-section">
-          <div class="deals-title">
-            <div class="deals__title-header">
-              <p id="deal-day">Deals of the day</p>
-              <div class="deals__time-left">
-                <img loading="lazy" src="assets/logos/clock.svg" alt="clocl icon" />
-                <span>22: 07 : 36 Left</span>
-              </div>
-            </div>
-            <button title="view all">VIEW ALL</button>
-          </div>
-          <div class="deals__products" aria-label="all the discounted products">
-            <article class="product" aria-labelledby="Casio">
-              <a href="#" role="button">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/r/h/i/1-26970-invicta-men-original-imah8hwzdepkxfgb.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="product-details">
-                  <p class="product-title" id="Casio">Casio, Fastrack, sonata & much more</p>
-                  <p class="product-discount">Upto 80%+Extra 10%Off</p>
-                  <p class="product-deal-type">Knockout Deals!</p>
-                </div>
-              </a>
-            </article>
-            <article class="product" aria-labelledby="home">
-              <a href="#" role="button">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/s/z/h/10-10-23-200-wooden-temple-2-twinster-11-02-original-imahfyrmhfcbkfhs.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="product-details">
-                  <p class="product-title" id="home">Home Temples & more</p>
-                  <p class="product-discount">Extra 10%Off</p>
-                  <p class="product-deal-type">Space Saving furniture</p>
-                </div>
-              </a>
-            </article>
-            <article class="product" aria-labelledby="Premimum">
-              <a href="#" role="button">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/flip-cover/r/s/t/13873-blue-tgk-original-imah4s2ufvrqkzgq.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="product-details">
-                  <p class="product-title" id="Premimum">Preminum Tablet Cases</p>
-                  <p class="product-discount">Extra 10%Off</p>
-                  <p class="product-deal-type">For All Top Models</p>
-                </div>
-              </a>
-            </article>
-            <article class="product" aria-labelledby="Best">
-              <a href="#" role="button">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/pillow/w/u/5/10-cushion-05m-304-5-fibre-cushion-16-16-inchs-304-spinewell-original-imagp4fgeh4fvs2u.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="product-details">
-                  <p class="product-title" id="Best">Best of Home Decor</p>
-                  <p class="product-discount">From ₹79</p>
-                  <p class="product-deal-type">Lowest Price Ever</p>
-                </div>
-              </a>
-            </article>
-            <article class="product" aria-labelledby="Fashion">
-              <a href="#" role="button">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/i/h/s/l-ww-melanin-balck-smartees-original-imah5gkygumgxvaz.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="product-details">
-                  <p class="product-title" id="Fashion">Mestronaut, Provogue & more</p>
-                  <p class="product-discount">From ₹4249+Extra 10%Off</p>
-                  <p class="product-deal-type">Jacket Dresses & More</p>
-                </div>
-              </a>
-            </article>
-            <article class="product" aria-labelledby="monitor">
-              <a href="#" role="button">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/110/110/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=80"
-                  alt="product image"
-                />
-                <div class="product-details">
-                  <p class="product-title" id="monitor">Monitors</p>
-                  <p class="product-discount">Upto 80%+Extra 10%Off</p>
-                  <p class="product-deal-type">On all Products</p>
-                </div>
-              </a>
-            </article>
-            <article class="product" aria-labelledby="lava">
-              <a href="#" role="button">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/312/312/k3xcdjk0pkrrdj/mobile/j/m/f/lava-a5-lf5000-a5-original-imafmjkamgsvzsng.jpeg?q=90"
-                  alt="product image"
-                />
-                <div class="product-details">
-                  <p class="product-title" id="lava">LAVA A1500</p>
-                  <p class="product-discount">Flat ₹830 Off</p>
-                  <p class="product-deal-type">Now ₹999</p>
-                </div>
-              </a>
-            </article>
-            <article class="product" aria-labelledby="lava2">
-              <a href="#" role="button">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/300/300/k3xcdjk0pkrrdj/mobile/j/m/f/lava-a5-lf5000-a5-original-imafmjkamgsvzsng.jpeg?q=90"
-                  alt="product image"
-                />
-                <div class="product-details">
-                  <p class="product-title" id="lava2">LAVA A1500</p>
-                  <p class="product-discount">Flat ₹830 Off</p>
-                  <p class="product-deal-type">Now ₹999</p>
-                </div>
-              </a>
-            </article>
-
-            <article class="product" id="last-product" aria-labelledby="cofe">
-              <a href="#" role="button">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/120/120/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=80"
-                  alt="product image"
-                />
-                <div class="product-details">
-                  <p class="product-title" id="cofe">Coffee Powder</p>
-                  <p class="product-discount">Upto 80% Off</p>
-                  <p class="product-deal-type">Knockout Deals!</p>
-                </div>
-              </a>
-            </article>
-          </div>
-          <a href="#last-product" class="right-arrow-container">
-            <img loading="lazy" class="right-arrow" src="assets/logos/right-arrow.svg" alt="go to last product" />
-          </a>
-        </div>
-        <div class="deals-right-section" tabindex="0">
-          <img loading="lazy" src="assets/images/new-beginning.png" alt="current deal image" />
-        </div>
-      </section>
-      <!-- for mobile screens -->
-      <section class="mobile-deals" aria-labelledby="mob-deal">
-        <div class="mobile-deals-title">
+  <main>
+    <!-- deals of the day for lg screen -->
+    <section class="deals" aria-labelledby="deal-day">
+      <div class="deals-left-section">
+        <div class="deals-title">
           <div class="deals__title-header">
-            <p id="mob-deal">Deals of the day</p>
+            <p id="deal-day">Deals of the day</p>
             <div class="deals__time-left">
               <img loading="lazy" src="assets/logos/clock.svg" alt="clocl icon" />
               <span>22: 07 : 36 Left</span>
@@ -350,397 +169,489 @@
           </div>
           <button title="view all">VIEW ALL</button>
         </div>
-        <div class="mobile-products">
-          <article class="mobile-product" aria-labelledby="mobile-casio">
+        <div class="deals__products" aria-label="all the discounted products">
+          <article class="product" aria-labelledby="Casio">
             <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/r/h/i/1-26970-invicta-men-original-imah8hwzdepkxfgb.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-casio">Casio, Fastrack, sonata & much more</p>
-                    <p class="mobile-product-discount">Upto 80%+Extra 10%Off</p>
-                  </div>
-                </div>
-              </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-home">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/s/z/h/10-10-23-200-wooden-temple-2-twinster-11-02-original-imahfyrmhfcbkfhs.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-home">Home Temples & More</p>
-                    <p class="mobile-product-discount">Extra 10%Off</p>
-                  </div>
-                </div>
-              </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-prem">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/flip-cover/r/s/t/13873-blue-tgk-original-imah4s2ufvrqkzgq.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-prem">Premimum Tablet Cases</p>
-                    <p class="mobile-product-discount">For all Top Models</p>
-                  </div>
-                </div>
-              </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-best">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/pillow/w/u/5/10-cushion-05m-304-5-fibre-cushion-16-16-inchs-304-spinewell-original-imagp4fgeh4fvs2u.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-best">Best of Home Decor</p>
-                    <p class="mobile-product-discount">From ₹79 only</p>
-                  </div>
-                </div>
-              </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-fasion">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/i/h/s/l-ww-melanin-balck-smartees-original-imah5gkygumgxvaz.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-fasion">Mestronaut, Provogue & more</p>
-                    <p class="mobile-product-discount">From ₹4249</p>
-                  </div>
-                </div>
-              </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-monitor">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/110/110/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=80"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-monitor">Monitors</p>
-                    <p class="mobile-product-discount">Upto 80%+Extra 10%Off</p>
-                  </div>
-                </div>
-              </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-lava">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/312/312/k3xcdjk0pkrrdj/mobile/j/m/f/lava-a5-lf5000-a5-original-imafmjkamgsvzsng.jpeg?q=90"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-lava">LAVA A1500</p>
-                    <p class="mobile-product-discount">Flat ₹830 Off</p>
-                  </div>
-                </div>
-              </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="right arrow" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-cofe">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/120/120/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=80"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-cofe">Coffee Powder</p>
-                    <p class="mobile-product-discount">Buy 1 Get 1 Free</p>
-                  </div>
-                </div>
-              </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-        </div>
-      </section>
-      <!-- books -->
-      <section class="books-and-instruments" aria-labelledby="book-header">
-        <div class="books-header">
-          <div class="books-title">
-            <p id="book-header">Books And music Instruments</p>
-            <p class="shop-now">Shop Now!</p>
-          </div>
-          <button title="VIEW ALL">VIEW ALL</button>
-        </div>
-        <div class="books-and-instruments__products">
-          <article class="product" aria-labelledby="harmonium">
-            <a href="#" role="button">
-              <img
-                loading="lazy"
-                src="https://rukminim2.flixcart.com/image/612/612/xif0q/harmonium/d/z/t/39-gs4-sg-musical-original-imah2v3yf8xwxhjn.jpeg?q=70"
-                alt="product image"
-              />
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/r/h/i/1-26970-invicta-men-original-imah8hwzdepkxfgb.jpeg?q=70"
+                alt="product image" />
               <div class="product-details">
-                <p class="product-title" id="harmonium">Harmoniums</p>
-                <p class="product-discount">Up to 60% Off</p>
-                <p class="product-deal-type">Shop Now!</p>
+                <p class="product-title" id="Casio">Casio, Fastrack, sonata & much more</p>
+                <p class="product-discount">Upto 80%+Extra 10%Off</p>
+                <p class="product-deal-type">Knockout Deals!</p>
               </div>
             </a>
           </article>
-          <article class="product" aria-labelledby="flutes">
+          <article class="product" aria-labelledby="home">
             <a href="#" role="button">
-              <img
-                loading="lazy"
-                src="https://rukminim2.flixcart.com/image/612/612/kwl0akw0/flute/e/u/d/g-scale-bamboo-flute-bamboo-flute-43-cm-khalsa-musical-original-imag98hfxksucfzp.jpeg?q=70"
-                alt="product image"
-              />
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/s/z/h/10-10-23-200-wooden-temple-2-twinster-11-02-original-imahfyrmhfcbkfhs.jpeg?q=70"
+                alt="product image" />
               <div class="product-details">
-                <p class="product-title" id="flutes">Flutes</p>
-                <p class="product-discount">Up to 80% Off</p>
-                <p class="product-deal-type">Shop Now!</p>
+                <p class="product-title" id="home">Home Temples & more</p>
+                <p class="product-discount">Extra 10%Off</p>
+                <p class="product-deal-type">Space Saving furniture</p>
               </div>
             </a>
           </article>
-          <article class="product" aria-labelledby="guitars">
+          <article class="product" aria-labelledby="Premimum">
             <a href="#" role="button">
-              <img
-                loading="lazy"
-                src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/e/j/f/rvl-38c-lgp-nt-revel-original-imah4ea9zuzcr2by.jpeg?q=70"
-                alt="product image"
-              />
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/flip-cover/r/s/t/13873-blue-tgk-original-imah4s2ufvrqkzgq.jpeg?q=70"
+                alt="product image" />
               <div class="product-details">
-                <p class="product-title" id="guitars">Acoustic Guitars</p>
-                <p class="product-discount">Starting ₹1799</p>
-                <p class="product-deal-type">Juarez, Revel...</p>
+                <p class="product-title" id="Premimum">Preminum Tablet Cases</p>
+                <p class="product-discount">Extra 10%Off</p>
+                <p class="product-deal-type">For All Top Models</p>
               </div>
             </a>
           </article>
-          <article class="product" aria-labelledby="music">
+          <article class="product" aria-labelledby="Best">
             <a href="#" role="button">
-              <img
-                loading="lazy"
-                src="https://rukminim2.flixcart.com/image/612/612/xif0q/car-media-player/n/a/b/sb-0000bt-blue-bluetooth-usb-sd-aux-fm-mp3-sound-boss-original-imah5aggnnhwrzty.jpeg?q=70"
-                alt="product image"
-              />
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/pillow/w/u/5/10-cushion-05m-304-5-fibre-cushion-16-16-inchs-304-spinewell-original-imagp4fgeh4fvs2u.jpeg?q=70"
+                alt="product image" />
               <div class="product-details">
-                <p class="product-title" id="music">Musical Accessories</p>
+                <p class="product-title" id="Best">Best of Home Decor</p>
+                <p class="product-discount">From ₹79</p>
+                <p class="product-deal-type">Lowest Price Ever</p>
+              </div>
+            </a>
+          </article>
+          <article class="product" aria-labelledby="Fashion">
+            <a href="#" role="button">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/i/h/s/l-ww-melanin-balck-smartees-original-imah5gkygumgxvaz.jpeg?q=70"
+                alt="product image" />
+              <div class="product-details">
+                <p class="product-title" id="Fashion">Mestronaut, Provogue & more</p>
+                <p class="product-discount">From ₹4249+Extra 10%Off</p>
+                <p class="product-deal-type">Jacket Dresses & More</p>
+              </div>
+            </a>
+          </article>
+          <article class="product" aria-labelledby="monitor">
+            <a href="#" role="button">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/110/110/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=80"
+                alt="product image" />
+              <div class="product-details">
+                <p class="product-title" id="monitor">Monitors</p>
+                <p class="product-discount">Upto 80%+Extra 10%Off</p>
+                <p class="product-deal-type">On all Products</p>
+              </div>
+            </a>
+          </article>
+          <article class="product" aria-labelledby="lava">
+            <a href="#" role="button">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/312/312/k3xcdjk0pkrrdj/mobile/j/m/f/lava-a5-lf5000-a5-original-imafmjkamgsvzsng.jpeg?q=90"
+                alt="product image" />
+              <div class="product-details">
+                <p class="product-title" id="lava">LAVA A1500</p>
+                <p class="product-discount">Flat ₹830 Off</p>
+                <p class="product-deal-type">Now ₹999</p>
+              </div>
+            </a>
+          </article>
+          <article class="product" aria-labelledby="lava2">
+            <a href="#" role="button">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/300/300/k3xcdjk0pkrrdj/mobile/j/m/f/lava-a5-lf5000-a5-original-imafmjkamgsvzsng.jpeg?q=90"
+                alt="product image" />
+              <div class="product-details">
+                <p class="product-title" id="lava2">LAVA A1500</p>
+                <p class="product-discount">Flat ₹830 Off</p>
+                <p class="product-deal-type">Now ₹999</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product" id="last-product" aria-labelledby="cofe">
+            <a href="#" role="button">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/120/120/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=80"
+                alt="product image" />
+              <div class="product-details">
+                <p class="product-title" id="cofe">Coffee Powder</p>
                 <p class="product-discount">Upto 80% Off</p>
-                <p class="product-deal-type">Shop Now!</p>
-              </div>
-            </a>
-          </article>
-          <article class="product" aria-labelledby="book">
-            <a href="#" role="button">
-              <img
-                loading="lazy"
-                src="https://rukminim2.flixcart.com/image/612/612/book/8/8/4/metamorphosis-original-imae552hhxwcc5gj.jpeg?q=70"
-                alt="product image"
-              />
-              <div class="product-details">
-                <p class="product-title" id="book">Metamorphosis</p>
-                <p class="product-discount">Up to 80% Off</p>
-                <p class="product-deal-type">Shop Now!</p>
-              </div>
-            </a>
-          </article>
-          <article class="product" aria-labelledby="acoustics">
-            <a href="#" role="button">
-              <img
-                loading="lazy"
-                src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/8/d/t/rvl-38c-lgp-3ts-revel-original-imah4ea7yphgggmb.jpeg?q=70"
-                alt="product image"
-              />
-              <div class="product-details">
-                <p class="product-title" id="acoustics">Acoustic Guitars</p>
-                <p class="product-discount">Starting ₹1999</p>
-                <p class="product-deal-type">By Revel</p>
+                <p class="product-deal-type">Knockout Deals!</p>
               </div>
             </a>
           </article>
         </div>
-      </section>
-      <!-- mobile component of books and music -->
-      <section class="mobile-deals" aria-labelledby="music-header">
-        <div class="books-header">
-          <div class="books-title">
-            <p id="music-header">Books And music Instruments</p>
-            <p class="shop-now">Shop Now!</p>
+        <a href="#last-product" class="right-arrow-container">
+          <img loading="lazy" class="right-arrow" src="assets/logos/right-arrow.svg" alt="go to last product" />
+        </a>
+      </div>
+      <div class="deals-right-section" tabindex="0">
+        <img loading="lazy" src="assets/images/new-beginning.png" alt="current deal image" />
+      </div>
+    </section>
+    <!-- for mobile screens -->
+    <section class="mobile-deals" aria-labelledby="mob-deal">
+      <div class="mobile-deals-title">
+        <div class="deals__title-header">
+          <p id="mob-deal">Deals of the day</p>
+          <div class="deals__time-left">
+            <img loading="lazy" src="assets/logos/clock.svg" alt="clocl icon" />
+            <span>22: 07 : 36 Left</span>
           </div>
-          <button title="VIEW ALL">VIEW ALL</button>
         </div>
-        <div class="mobile-products">
-          <article class="mobile-product" aria-labelledby="mobile-harmonium">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/harmonium/d/z/t/39-gs4-sg-musical-original-imah2v3yf8xwxhjn.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-harmonium">Harmoniums</p>
-                    <p class="mobile-product-discount">Up to 80% Off</p>
-                  </div>
+        <button title="view all">VIEW ALL</button>
+      </div>
+      <div class="mobile-products">
+        <article class="mobile-product" aria-labelledby="mobile-casio">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/watch/r/h/i/1-26970-invicta-men-original-imah8hwzdepkxfgb.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-casio">Casio, Fastrack, sonata & much more</p>
+                  <p class="mobile-product-discount">Upto 80%+Extra 10%Off</p>
                 </div>
               </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-flutes">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/kwl0akw0/flute/e/u/d/g-scale-bamboo-flute-bamboo-flute-43-cm-khalsa-musical-original-imag98hfxksucfzp.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-flutes">Flutes</p>
-                    <p class="mobile-product-discount">Up to 80% Off</p>
-                  </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-home">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/home-temple/s/z/h/10-10-23-200-wooden-temple-2-twinster-11-02-original-imahfyrmhfcbkfhs.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-home">Home Temples & More</p>
+                  <p class="mobile-product-discount">Extra 10%Off</p>
                 </div>
               </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-guitar">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/e/j/f/rvl-38c-lgp-nt-revel-original-imah4ea9zuzcr2by.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-guitar">Acoustic Guitars</p>
-                    <p class="mobile-product-discount">Starting ₹1799</p>
-                  </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-prem">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/flip-cover/r/s/t/13873-blue-tgk-original-imah4s2ufvrqkzgq.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-prem">Premimum Tablet Cases</p>
+                  <p class="mobile-product-discount">For all Top Models</p>
                 </div>
               </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-music">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/car-media-player/n/a/b/sb-0000bt-blue-bluetooth-usb-sd-aux-fm-mp3-sound-boss-original-imah5aggnnhwrzty.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-music">Musical Accessories</p>
-                    <p class="mobile-product-discount">Up to 80% Off</p>
-                  </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-best">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/pillow/w/u/5/10-cushion-05m-304-5-fibre-cushion-16-16-inchs-304-spinewell-original-imagp4fgeh4fvs2u.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-best">Best of Home Decor</p>
+                  <p class="mobile-product-discount">From ₹79 only</p>
                 </div>
               </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-book">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/book/8/8/4/metamorphosis-original-imae552hhxwcc5gj.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-book">Metamorphosis</p>
-                    <p class="mobile-product-discount">up to 80% Off</p>
-                  </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-fasion">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/i/h/s/l-ww-melanin-balck-smartees-original-imah5gkygumgxvaz.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-fasion">Mestronaut, Provogue & more</p>
+                  <p class="mobile-product-discount">From ₹4249</p>
                 </div>
               </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
-              </div>
-            </a>
-          </article>
-          <article class="mobile-product" aria-labelledby="mobile-acoustics">
-            <a href="#" role="button">
-              <div class="mobile-product-left">
-                <img
-                  loading="lazy"
-                  src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/8/d/t/rvl-38c-lgp-3ts-revel-original-imah4ea7yphgggmb.jpeg?q=70"
-                  alt="product image"
-                />
-                <div class="mobile-product__description">
-                  <div class="mobile-product-details">
-                    <p class="mobile-product-title" id="mobile-acoustics">Accoustic Guitars</p>
-                    <p class="mobile-product-discount">Starting ₹1999</p>
-                  </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-monitor">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/110/110/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=80"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-monitor">Monitors</p>
+                  <p class="mobile-product-discount">Upto 80%+Extra 10%Off</p>
                 </div>
               </div>
-              <div role="button" class="mobile-product-right">
-                <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-lava">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/312/312/k3xcdjk0pkrrdj/mobile/j/m/f/lava-a5-lf5000-a5-original-imafmjkamgsvzsng.jpeg?q=90"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-lava">LAVA A1500</p>
+                  <p class="mobile-product-discount">Flat ₹830 Off</p>
+                </div>
               </div>
-            </a>
-          </article>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="right arrow" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-cofe">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/120/120/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=80"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-cofe">Coffee Powder</p>
+                  <p class="mobile-product-discount">Buy 1 Get 1 Free</p>
+                </div>
+              </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+    <!-- books -->
+    <section class="books-and-instruments" aria-labelledby="book-header">
+      <div class="books-header">
+        <div class="books-title">
+          <p id="book-header">Books And music Instruments</p>
+          <p class="shop-now">Shop Now!</p>
         </div>
-      </section>
-    </main>
-  </body>
+        <button title="VIEW ALL">VIEW ALL</button>
+      </div>
+      <div class="books-and-instruments__products">
+        <article class="product" aria-labelledby="harmonium">
+          <a href="#" role="button">
+            <img loading="lazy"
+              src="https://rukminim2.flixcart.com/image/612/612/xif0q/harmonium/d/z/t/39-gs4-sg-musical-original-imah2v3yf8xwxhjn.jpeg?q=70"
+              alt="product image" />
+            <div class="product-details">
+              <p class="product-title" id="harmonium">Harmoniums</p>
+              <p class="product-discount">Up to 60% Off</p>
+              <p class="product-deal-type">Shop Now!</p>
+            </div>
+          </a>
+        </article>
+        <article class="product" aria-labelledby="flutes">
+          <a href="#" role="button">
+            <img loading="lazy"
+              src="https://rukminim2.flixcart.com/image/612/612/kwl0akw0/flute/e/u/d/g-scale-bamboo-flute-bamboo-flute-43-cm-khalsa-musical-original-imag98hfxksucfzp.jpeg?q=70"
+              alt="product image" />
+            <div class="product-details">
+              <p class="product-title" id="flutes">Flutes</p>
+              <p class="product-discount">Up to 80% Off</p>
+              <p class="product-deal-type">Shop Now!</p>
+            </div>
+          </a>
+        </article>
+        <article class="product" aria-labelledby="guitars">
+          <a href="#" role="button">
+            <img loading="lazy"
+              src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/e/j/f/rvl-38c-lgp-nt-revel-original-imah4ea9zuzcr2by.jpeg?q=70"
+              alt="product image" />
+            <div class="product-details">
+              <p class="product-title" id="guitars">Acoustic Guitars</p>
+              <p class="product-discount">Starting ₹1799</p>
+              <p class="product-deal-type">Juarez, Revel...</p>
+            </div>
+          </a>
+        </article>
+        <article class="product" aria-labelledby="music">
+          <a href="#" role="button">
+            <img loading="lazy"
+              src="https://rukminim2.flixcart.com/image/612/612/xif0q/car-media-player/n/a/b/sb-0000bt-blue-bluetooth-usb-sd-aux-fm-mp3-sound-boss-original-imah5aggnnhwrzty.jpeg?q=70"
+              alt="product image" />
+            <div class="product-details">
+              <p class="product-title" id="music">Musical Accessories</p>
+              <p class="product-discount">Upto 80% Off</p>
+              <p class="product-deal-type">Shop Now!</p>
+            </div>
+          </a>
+        </article>
+        <article class="product" aria-labelledby="book">
+          <a href="#" role="button">
+            <img loading="lazy"
+              src="https://rukminim2.flixcart.com/image/612/612/book/8/8/4/metamorphosis-original-imae552hhxwcc5gj.jpeg?q=70"
+              alt="product image" />
+            <div class="product-details">
+              <p class="product-title" id="book">Metamorphosis</p>
+              <p class="product-discount">Up to 80% Off</p>
+              <p class="product-deal-type">Shop Now!</p>
+            </div>
+          </a>
+        </article>
+        <article class="product" aria-labelledby="acoustics">
+          <a href="#" role="button">
+            <img loading="lazy"
+              src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/8/d/t/rvl-38c-lgp-3ts-revel-original-imah4ea7yphgggmb.jpeg?q=70"
+              alt="product image" />
+            <div class="product-details">
+              <p class="product-title" id="acoustics">Acoustic Guitars</p>
+              <p class="product-discount">Starting ₹1999</p>
+              <p class="product-deal-type">By Revel</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+    <!-- mobile component of books and music -->
+    <section class="mobile-deals" aria-labelledby="music-header">
+      <div class="books-header">
+        <div class="books-title">
+          <p id="music-header">Books And music Instruments</p>
+          <p class="shop-now">Shop Now!</p>
+        </div>
+        <button title="VIEW ALL">VIEW ALL</button>
+      </div>
+      <div class="mobile-products">
+        <article class="mobile-product" aria-labelledby="mobile-harmonium">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/harmonium/d/z/t/39-gs4-sg-musical-original-imah2v3yf8xwxhjn.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-harmonium">Harmoniums</p>
+                  <p class="mobile-product-discount">Up to 80% Off</p>
+                </div>
+              </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-flutes">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/kwl0akw0/flute/e/u/d/g-scale-bamboo-flute-bamboo-flute-43-cm-khalsa-musical-original-imag98hfxksucfzp.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-flutes">Flutes</p>
+                  <p class="mobile-product-discount">Up to 80% Off</p>
+                </div>
+              </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-guitar">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/e/j/f/rvl-38c-lgp-nt-revel-original-imah4ea9zuzcr2by.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-guitar">Acoustic Guitars</p>
+                  <p class="mobile-product-discount">Starting ₹1799</p>
+                </div>
+              </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-music">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/car-media-player/n/a/b/sb-0000bt-blue-bluetooth-usb-sd-aux-fm-mp3-sound-boss-original-imah5aggnnhwrzty.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-music">Musical Accessories</p>
+                  <p class="mobile-product-discount">Up to 80% Off</p>
+                </div>
+              </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-book">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/book/8/8/4/metamorphosis-original-imae552hhxwcc5gj.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-book">Metamorphosis</p>
+                  <p class="mobile-product-discount">up to 80% Off</p>
+                </div>
+              </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+        <article class="mobile-product" aria-labelledby="mobile-acoustics">
+          <a href="#" role="button">
+            <div class="mobile-product-left">
+              <img loading="lazy"
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/acoustic-guitar/8/d/t/rvl-38c-lgp-3ts-revel-original-imah4ea7yphgggmb.jpeg?q=70"
+                alt="product image" />
+              <div class="mobile-product__description">
+                <div class="mobile-product-details">
+                  <p class="mobile-product-title" id="mobile-acoustics">Accoustic Guitars</p>
+                  <p class="mobile-product-discount">Starting ₹1999</p>
+                </div>
+              </div>
+            </div>
+            <div role="button" class="mobile-product-right">
+              <img loading="lazy" src="assets/logos/right-arrow.svg" alt="visit the category" />
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

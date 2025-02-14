@@ -31,11 +31,6 @@ nav {
   display: none;
 }
 
-.hamburger-menu hr {
-  margin: 4px 0;
-  width: 1.25rem;
-}
-
 .nav-left-section input {
   padding: 0.6rem 1.25rem;
   width: 100%;

@@ -136,3 +136,11 @@ ul.nav-links {
 .skip-link:focus {
   top: 10px;
 }
+
+.search-label {
+  display: none;
+}
+
+input {
+  outline: none;
+}

@@ -3,6 +3,7 @@
   --bg-body-main: #f1f2f4;
   --white: white;
   --primary-grey: rgb(110, 110, 110);
+  --secondary-border-grey: #cacaca;
   --discount-green: rgb(18 171 18);
   --product-header-padding: 20px 20px 10px 20px;
   --product-wrapper-padding: 20px 10px 0 10px;
@@ -129,7 +130,7 @@ button:hover {
   justify-content: space-between;
   padding: var(--product-header-padding);
   align-items: center;
-  border-bottom: 1px solid var(--primary-grey);
+  border-bottom: 1px solid var(--secondary-border-grey);
 }
 
 .deals__title-header {
@@ -272,6 +273,7 @@ button:hover {
   }
   .deals__title-header {
     flex-direction: row-reverse;
+    align-items: center;
     gap: 5px;
   }
   .deals__title-header p,
@@ -327,6 +329,7 @@ button:hover {
   justify-content: space-between;
   padding: var(--product-header-padding);
   align-items: center;
+  border-bottom: 1px solid var(--secondary-border-grey);
 }
 
 .mobile-products {
@@ -350,7 +353,7 @@ button:hover {
   justify-content: space-between;
   padding: 15px 22px;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--secondary-border-grey);
 }
 
 .mobile-product-left {
@@ -398,7 +401,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   padding: var(--product-header-padding);
-  border-bottom: 1px solid var(--primary-grey);
+  border-bottom: 1px solid var(--secondary-border-grey);
   align-items: center;
 }
 

@@ -1,3 +1,11 @@
+header {
+  position: sticky;
+  top: -0.5px;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+
 nav {
   color: var(--white);
   background-color: var(--primary-blue-bg);
@@ -6,6 +14,9 @@ nav {
   gap: 1.25rem;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 auto;
+  max-width: 160rem;
+  width: 100%;
 }
 
 .nav-left-section {
@@ -18,11 +29,6 @@ nav {
 
 .hamburger-menu {
   display: none;
-}
-
-.hamburger-menu hr {
-  margin: 4px 0;
-  width: 1.25rem;
 }
 
 .nav-left-section input {
@@ -79,7 +85,7 @@ ul.nav-links {
 .login-btn {
   padding: 0.5rem 2.18rem;
   font-weight: bold;
-  color: #2874f1;
+  color: var(--primary-blue-bg);
   background-color: var(--white);
   border: none;
 }
@@ -114,4 +120,19 @@ ul.nav-links {
   .login-btn {
     padding: 0.5rem 1.25rem;
   }
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: var(--font-black);
+  color: var(--white);
+  padding: 10px;
+  text-decoration: none;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 10px;
 }
